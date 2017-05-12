@@ -5,7 +5,8 @@ CREATE TABLE users (
   writer BOOLEAN DEFAULT FALSE,
   favorite VARCHAR DEFAULT NULL,
   premium BOOLEAN DEFAULT FALSE,
-  followers VARCHAR DEFAULT NULL
+  followers VARCHAR DEFAULT NULL,
+  password VARCHAR
 );
 
 CREATE TABLE articles (
