@@ -4,7 +4,6 @@ DELETE FROM articles
   ;
 
 /*SEE TOP TEN MOST READ articles*/
-
 SELECT title, author FROM articles
   ORDER BY times_read DESC
   LIMIT 10
