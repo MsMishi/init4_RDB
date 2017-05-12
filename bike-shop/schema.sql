@@ -14,17 +14,17 @@ CREATE TABLE frames (
   color VARCHAR DEFAULT 'black',
   size INTEGER DEFAULT 55,
   style VARCHAR 'street'
-)
+);
 
 CREATE TABLE tires (
   id SERIAL PRIMARY KEY,
   diameter INTEGER DEFAULT 22,
   type VARCHAR DEFAULT 'street'
-)
+);
 
 CREATE TABLE bike_frame (
   id SERIAL PRIMARY KEY,
   bike_id INTEGER FOREIGN KEY DEFAULT NULL,
   front_tire_id INTEGER FOREIGN KEY DEFAULT NULL,
   back_tire_id INTEGER FOREIGN KEY DEFAULT NULL
-)
+);

@@ -1,0 +1,19 @@
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR,
+  email VARCHAR,
+  writer BOOLEAN DEFAULT FALSE,
+  favorite VARCHAR DEFAULT NULL,
+  premium BOOLEAN DEFAULT FALSE,
+  followers VARCHAR DEFAULT NULL
+);
+
+CREATE TABLE articles (
+  id SERIAL PRIMARY KEY,
+  title VARCHAR,
+  author VARCHAR,
+  premium BOOLEAN DEFAULT FALSE,
+  content VARCHAR,
+  times_read INTEGER DEFAULT 0,
+  genre VARCHAR
+);
